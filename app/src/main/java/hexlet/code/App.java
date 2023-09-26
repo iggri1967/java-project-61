@@ -15,7 +15,7 @@ public class App {
                 break;
             case 3:
                 Engine.greeting();
-
+                Engine.flow();
             default:
                 break;
         }
