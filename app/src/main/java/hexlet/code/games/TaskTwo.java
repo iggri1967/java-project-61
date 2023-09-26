@@ -1,14 +1,12 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Engine;
+
 import java.util.Random;
 import java.util.Scanner;
 
 
 public class TaskTwo {
     public static void secondTask() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("May I have your name? ");
-        String userName = scan.next();
-        System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         int attempt = 1;
         boolean result = true;
@@ -25,11 +23,11 @@ public class TaskTwo {
                 result = true;
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + (anyRandom % 2 == 0 ? "yes" : "no") + "'.");
-                System.out.println("Let's try again, " + userName + "!");
+                System.out.println("Let's try again, " + Engine.user + "!");
                 return;
             }
         }
-        System.out.println("Congratulations, " + userName + "!");
+        System.out.println("Congratulations, " + Engine.user + "!");
         return;
     }
 }
