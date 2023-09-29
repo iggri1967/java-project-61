@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import hexlet.code.games.Calc;
 import hexlet.code.games.TaskTwo;
 
 public class App {
@@ -15,7 +16,7 @@ public class App {
                 break;
             case 3:
                 Engine.greeting();
-                Engine.flow();
+                Calc.secondTest();
             default:
                 break;
         }
