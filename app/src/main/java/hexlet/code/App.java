@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.GCD;
 
 public class App {
     public static void main(String[] args) {
@@ -17,6 +18,9 @@ public class App {
             case 3:
                 Engine.greeting();
                 Calc.secondTest();
+            case 4:
+                Engine.greeting();
+                GCD.thirdTest();
             default:
                 break;
         }
