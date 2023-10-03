@@ -1,7 +1,7 @@
 package hexlet.code;
 
 import hexlet.code.games.Calc;
-import hexlet.code.games.TaskTwo;
+import hexlet.code.games.Even;
 
 public class App {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class App {
                 break;
             case 2:
                 Engine.greeting();
-                TaskTwo.secondTask();
+                Even.firstTest();
                 break;
             case 3:
                 Engine.greeting();

@@ -52,4 +52,26 @@ public class Engine {
         }
         System.out.println("Congratulations, " + Engine.user + "!");
     }
+    public static void flow(String requirement, int[] questions, String[] correctAnswers) {
+
+        System.out.println(requirement);
+        int attempt = 0;
+        while (attempt <= 2) {
+            System.out.println("Question: " + questions[attempt]);
+            Scanner scanner = new Scanner(System.in);
+            String answer = scanner.nextLine();
+            if (answer.equals(correctAnswers[attempt])) {
+                System.out.println("Your answer: " + answer);
+                System.out.println("Correct!");
+                attempt++;
+            } else {
+                //result = false;
+                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
+                        + correctAnswers[attempt] + "'.");
+                System.out.println("Let's try again, " + Engine.user + "!");
+                return;
+            }
+        }
+        System.out.println("Congratulations, " + Engine.user + "!");
+    }
 }
