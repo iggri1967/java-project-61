@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.Calc;
-import hexlet.code.games.Even;
-import hexlet.code.games.GCD;
-import hexlet.code.games.Progression;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
@@ -19,12 +16,19 @@ public class App {
             case 3:
                 Engine.greeting();
                 Calc.secondTest();
+                break;
             case 4:
                 Engine.greeting();
                 GCD.thirdTest();
+                break;
             case 5:
                 Engine.greeting();
                 Progression.forthTest();
+                break;
+            case 6:
+                Engine.greeting();
+                Prime.fifthTest();
+                break;
             default:
                 break;
         }
