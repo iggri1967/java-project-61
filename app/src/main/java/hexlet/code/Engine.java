@@ -15,6 +15,7 @@ public class Engine {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
         System.out.println("Your choice: " + choice());
     }
@@ -44,7 +45,6 @@ public class Engine {
                 System.out.println("Correct!");
                 attempt++;
             } else {
-                //result = false;
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + correctAnswers[attempt] + "'.");
                 System.out.println("Let's try again, " + Engine.user + "!");
@@ -66,7 +66,6 @@ public class Engine {
                 System.out.println("Correct!");
                 attempt++;
             } else {
-                //result = false;
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + correctAnswers[attempt] + "'.");
                 System.out.println("Let's try again, " + Engine.user + "!");

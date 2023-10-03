@@ -13,7 +13,6 @@ public class Calc {
             int a = new Random().nextInt(20);
             int b = new Random().nextInt(20);
             char sign = new Random().nextInt(20) % 2 == 0 ? '*' : '+';
-            //Formatter formatter = new Formatter();
             questions[i] = String.format("%d%c%d%n", a, sign, b);
             correctAnswers[i] = sign == '+' ? a + b : a * b;
         }

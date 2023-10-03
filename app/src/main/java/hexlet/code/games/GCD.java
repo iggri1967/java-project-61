@@ -19,8 +19,6 @@ public class GCD {
         for (int i = 0; i < 3; i++) {
             int n1 = new Random().nextInt(50);
             int n2 = new Random().nextInt(50);
-            //char sign = new Random().nextInt(20) % 2 == 0 ? '*' : '+';
-            //Formatter formatter = new Formatter();
             questions[i] = String.format("%d %d%n", n1, n2);
             correctAnswers[i] = gcdByEuclidsAlgorithm(n1, n2);
         }
