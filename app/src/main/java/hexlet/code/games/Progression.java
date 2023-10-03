@@ -12,7 +12,7 @@ public class Progression {
             int n = 10; // number of progressing member
             int a = new Random().nextInt(10); // initinal member
             int b = new Random().nextInt(10); // step of progression
-            int r = new Random().nextInt(2,9); // index of removing member
+            int r = new Random().nextInt(2, 9); // index of removing member
             String progressionString = "";
             int removedElement = 0;
             for (int j = 0; j < n; j++) {

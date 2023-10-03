@@ -17,7 +17,7 @@ public class Prime {
     }
     public static void generateQuestionsAndAnswers() {
         for (int i = 0; i < 3; i++) {
-            questions[i] = new Random().nextInt(2,100);
+            questions[i] = new Random().nextInt(2, 100);
             correctAnswers[i] = isPrime(questions[i]) ? "yes" : "no";
         }
     }

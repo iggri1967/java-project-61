@@ -7,7 +7,7 @@ public class Engine {
     public static String user;
 
     Engine(int userChoice) {
-       this.userChoice = userChoice;
+        this.userChoice = userChoice;
     }
     public static void listOfGames() {
         System.out.println("Please enter the game number and press Enter.");
@@ -22,7 +22,7 @@ public class Engine {
     }
     public static int choice() {
         Scanner scanner = new Scanner(System.in);
-       userChoice = scanner.nextInt();
+        userChoice = scanner.nextInt();
         return userChoice;
     }
     public static void greeting() {
