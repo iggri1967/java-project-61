@@ -3,13 +3,13 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static int userChoice;
-    public static String user;
+    //public static int userChoice;
+    //public static String user;
 
-    Engine(int userChoice) {
-        this.userChoice = userChoice;
-    }
-    public static void listOfGames() {
+    //Engine(int userChoice) {
+    //    this.userChoice = userChoice;
+    //}
+    /*public static void listOfGames() {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -19,19 +19,19 @@ public class Engine {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.println("Your choice: " + choice());
-    }
-    public static int choice() {
+    }*/
+    /*public static int choice() {
         Scanner scanner = new Scanner(System.in);
         userChoice = scanner.nextInt();
         return userChoice;
-    }
-    public static void greeting() {
+    }*/
+    /*public static void greeting() {
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
         Scanner scanner = new Scanner(System.in);
         Engine.user = scanner.nextLine();
         System.out.println("Hello, " + Engine.user + "!");
-    }
+    }*/
 
     public static void flow(String requirement, String[] questions, int[] correctAnswers) {
 
@@ -48,11 +48,11 @@ public class Engine {
             } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + correctAnswers[attempt] + "'.");
-                System.out.println("Let's try again, " + Engine.user + "!");
+                System.out.println("Let's try again, " + Cli.user + "!");
                 return;
             }
         }
-        System.out.println("Congratulations, " + Engine.user + "!");
+        System.out.println("Congratulations, " + Cli.user + "!");
     }
     public static void flow(String requirement, int[] questions, String[] correctAnswers) {
 
@@ -69,10 +69,10 @@ public class Engine {
             } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + correctAnswers[attempt] + "'.");
-                System.out.println("Let's try again, " + Engine.user + "!");
+                System.out.println("Let's try again, " + Cli.user + "!");
                 return;
             }
         }
-        System.out.println("Congratulations, " + Engine.user + "!");
+        System.out.println("Congratulations, " + Cli.user + "!");
     }
 }
