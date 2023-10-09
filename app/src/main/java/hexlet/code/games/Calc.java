@@ -17,7 +17,7 @@ public class Calc {
             correctAnswers[i] = sign == '+' ? a + b : a * b;
         }
     }
-    public static void secondTest() {
+    public static void startGame() {
         generateQuestionsAndAnswers();
         Engine.flow(requirement, questions, correctAnswers);
     }

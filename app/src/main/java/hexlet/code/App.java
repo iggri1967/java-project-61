@@ -25,23 +25,23 @@ public class App {
                 break;
             case 2:
                 Cli.runGame();
-                Even.firstTest();
+                Even.startGame();
                 break;
             case 3:
                 Cli.runGame();
-                Calc.secondTest();
+                Calc.startGame();
                 break;
             case 4:
                 Cli.runGame();
-                GCD.thirdTest();
+                GCD.startGame();
                 break;
             case 5:
                 Cli.runGame();
-                Progression.forthTest();
+                Progression.startGame();
                 break;
             case 6:
                 Cli.runGame();
-                Prime.fifthTest();
+                Prime.startGame();
                 break;
             default:
                 break;

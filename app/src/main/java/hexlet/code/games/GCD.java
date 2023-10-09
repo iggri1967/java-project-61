@@ -23,7 +23,7 @@ public class GCD {
             correctAnswers[i] = gcdByEuclidsAlgorithm(n1, n2);
         }
     }
-    public static void thirdTest() {
+    public static void startGame() {
         generateQuestionsAndAnswers();
         Engine.flow(requirement, questions, correctAnswers);
     }

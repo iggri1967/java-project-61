@@ -21,7 +21,7 @@ public class Prime {
             correctAnswers[i] = isPrime(questions[i]) ? "yes" : "no";
         }
     }
-    public static void fifthTest() {
+    public static void startGame() {
         generateQuestionsAndAnswers();
         Engine.flow(requirement, questions, correctAnswers);
     }

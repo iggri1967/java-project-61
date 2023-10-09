@@ -14,7 +14,7 @@ public class Even {
             correctAnswers[i] = questions[i] % 2 == 0 ? "yes" : "no";
         }
     }
-    public static void firstTest() {
+    public static void startGame() {
         generateQuestionsAndAnswers();
         Engine.flow(requirement, questions, correctAnswers);
     }

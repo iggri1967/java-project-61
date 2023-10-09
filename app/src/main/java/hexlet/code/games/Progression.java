@@ -30,7 +30,7 @@ public class Progression {
             }
         }
     }
-    public static void forthTest() {
+    public static void startGame() {
         generateQuestionsAndAnswers();
         Engine.flow(requirement, questions, correctAnswers);
     }
