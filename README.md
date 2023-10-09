@@ -7,4 +7,5 @@
 <a href="https://asciinema.org/a/ock9mNSgwOWe13aNh5LPyihmA" target="_blank"><img src="https://asciinema.org/a/ock9mNSgwOWe13aNh5LPyihmA.svg" /></a>
  <h4 align="center">Count like a calculator!</h4>
  <a href="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz" target="_blank"><img src="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz.svg" /></a>
- 
+ <h4 align="center">How about Greatest Common Divisor?</h4>
+ <a href="https://asciinema.org/a/YHQiywofibrWandE8cumsTynx" target="_blank"><img src="https://asciinema.org/a/YHQiywofibrWandE8cumsTynx.svg" /></a>
