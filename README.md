@@ -5,3 +5,6 @@
  <h3 align="center">Do you have a couple of minutes? Let's solve the simplest math problems and train your brain!</h3> 
  <h4 align="center">Even or odd number?</h4>
 <a href="https://asciinema.org/a/ock9mNSgwOWe13aNh5LPyihmA" target="_blank"><img src="https://asciinema.org/a/ock9mNSgwOWe13aNh5LPyihmA.svg" /></a>
+ <h4 align="center">Count like a calculator!</h4>
+ <a href="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz" target="_blank"><img src="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz.svg" /></a>
+ 
