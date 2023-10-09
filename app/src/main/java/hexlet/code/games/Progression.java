@@ -6,7 +6,8 @@ import java.util.Random;
 public class Progression {
     public static String requirement = "What number is missing in the progression?";
     public static String[] questions = new String[3];
-    public static int[] correctAnswers = new int[3];
+    public static int[] correctAnswersInt = new int[3];
+    public static String[] correctAnswers = new String[3];
     public static void generateQuestionsAndAnswers() {
         for (int i = 0; i < 3; i++) {
             int n = 10; // number of progressing member
@@ -26,7 +27,8 @@ public class Progression {
                     progressionString += " ";
                 }
                 questions[i] = progressionString;
-                correctAnswers[i] = removedElement;
+                correctAnswersInt[i] = removedElement;
+                correctAnswers[i] = Integer.toString(correctAnswersInt[i]);
             }
         }
     }

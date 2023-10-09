@@ -33,7 +33,7 @@ public class Engine {
         System.out.println("Hello, " + Engine.user + "!");
     }*/
 
-    public static void flow(String requirement, String[] questions, int[] correctAnswers) {
+    /*public static void flow(String requirement, String[] questions, int[] correctAnswers) {
 
         System.out.println(requirement);
         int attempt = 0;
@@ -55,6 +55,27 @@ public class Engine {
         System.out.println("Congratulations, " + Cli.user + "!");
     }
     public static void flow(String requirement, int[] questions, String[] correctAnswers) {
+
+        System.out.println(requirement);
+        int attempt = 0;
+        while (attempt <= 2) {
+            System.out.println("Question: " + questions[attempt]);
+            Scanner scanner = new Scanner(System.in);
+            String answer = scanner.nextLine();
+            if (answer.equals(correctAnswers[attempt])) {
+                System.out.println("Your answer: " + answer);
+                System.out.println("Correct!");
+                attempt++;
+            } else {
+                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
+                        + correctAnswers[attempt] + "'.");
+                System.out.println("Let's try again, " + Cli.user + "!");
+                return;
+            }
+        }
+        System.out.println("Congratulations, " + Cli.user + "!");
+    }*/
+    public static void flow(String requirement, String[] questions, String[] correctAnswers) {
 
         System.out.println(requirement);
         int attempt = 0;

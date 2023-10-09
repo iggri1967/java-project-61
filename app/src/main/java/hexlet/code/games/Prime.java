@@ -5,7 +5,8 @@ import java.util.Random;
 
 public class Prime {
     public static String requirement = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-    public static int[] questions = new int[3];
+    public static String[] questions = new String[3];
+    public static int[] questionsInt = new int[3];
     public static String[] correctAnswers = new String[3];
     private static boolean isPrime(int n) {
         for (int i = 2; i <= Math.sqrt(n); i++) {
@@ -17,8 +18,9 @@ public class Prime {
     }
     public static void generateQuestionsAndAnswers() {
         for (int i = 0; i < 3; i++) {
-            questions[i] = new Random().nextInt(2, 100);
-            correctAnswers[i] = isPrime(questions[i]) ? "yes" : "no";
+            questionsInt[i] = new Random().nextInt(2, 100);
+            questions[i] = Integer.toString(questionsInt[i]);
+            correctAnswers[i] = isPrime(questionsInt[i]) ? "yes" : "no";
         }
     }
     public static void startGame() {
