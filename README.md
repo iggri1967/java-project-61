@@ -9,3 +9,7 @@
  <a href="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz" target="_blank"><img src="https://asciinema.org/a/qnHln80i1MWjHJnWlUYPpjaJz.svg" /></a>
  <h4 align="center">How about Greatest Common Divisor?</h4>
  <a href="https://asciinema.org/a/YHQiywofibrWandE8cumsTynx" target="_blank"><img src="https://asciinema.org/a/YHQiywofibrWandE8cumsTynx.svg" /></a>
+<h4 align="center">It's just an arithmetic progression!</h4>
+<a href="https://asciinema.org/a/Z84RYXdpsZl2HcCb2JpdBEzv0" target="_blank"><img src="https://asciinema.org/a/Z84RYXdpsZl2HcCb2JpdBEzv0.svg" /></a>
+<h4 align="center">Strong about prime numbers?</h4>
+<a href="https://asciinema.org/a/D7yPpqpqCPfHnOcdpMggIZ24U" target="_blank"><img src="https://asciinema.org/a/D7yPpqpqCPfHnOcdpMggIZ24U.svg" /></a>
