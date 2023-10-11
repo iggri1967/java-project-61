@@ -1,39 +1,51 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+
 import java.util.Random;
 
 public class Progression {
     public static String requirement = "What number is missing in the progression?";
-    public static String[] questions = new String[3];
-    public static int[] correctAnswersInt = new int[3];
-    public static String[] correctAnswers = new String[3];
+    public static String[] questions = new String[Engine.COUNT_ROUNDS];
+    public static int[] correctAnswersInt = new int[Engine.COUNT_ROUNDS];
+    public static String[] correctAnswers = new String[Engine.COUNT_ROUNDS];
+
     public static void generateQuestionsAndAnswers() {
-        for (int i = 0; i < 3; i++) {
-            int n = 10; // number of progressing member
-            int a = new Random().nextInt(10); // initinal member
-            int b = new Random().nextInt(10); // step of progression
-            int r = new Random().nextInt(2, 9); // index of removing member
-            String progressionString = "";
-            int removedElement = 0;
-            for (int j = 0; j < n; j++) {
-                if (j == r) {
-                    removedElement = a + j * b;
-                    progressionString += "..";
-                } else {
-                    progressionString += a + j * b;
-                }
-                if (j < n - 1) {
-                    progressionString += " ";
-                }
-                questions[i] = progressionString;
-                correctAnswersInt[i] = removedElement;
-                correctAnswers[i] = Integer.toString(correctAnswersInt[i]);
-            }
+        Random random = new Random();
+        for (int i = 0; i < Engine.COUNT_ROUNDS; i++) {
+            int n = 10; // number of progressing members
+            int a = random.nextInt(10); // initial member
+            int b = random.nextInt(10); // step of progression
+            int r = random.nextInt(n); // index of removing member
+            int[] progression = generateArithmeticProgression(a, b, n);
+            progression[r] = 0; // Remove the element at index 'r'
+            questions[i] = formatProgression(progression);
+            correctAnswersInt[i] = a + r * b;
+            correctAnswers[i] = Integer.toString(correctAnswersInt[i]);
         }
     }
+
+    private static int[] generateArithmeticProgression(int a, int b, int n) {
+        int[] progression = new int[n];
+        for (int j = 0; j < n; j++) {
+            progression[j] = a + j * b;
+        }
+        return progression;
+    }
+
+    private static String formatProgression(int[] progression) {
+        StringBuilder progressionString = new StringBuilder();
+        for (int j = 0; j < progression.length; j++) {
+            if (j > 0) {
+                progressionString.append(" ");
+            }
+            progressionString.append(progression[j] == 0 ? ".." : progression[j]);
+        }
+        return progressionString.toString();
+    }
+
     public static void startGame() {
         generateQuestionsAndAnswers();
-        Engine.flow(requirement, questions, correctAnswers);
+        Engine.runGame(requirement, questions, correctAnswers);
     }
 }

@@ -6,8 +6,8 @@ import java.util.Random;
 
 public class GCD {
     public static String requirement = "Find the greatest common divisor of given numbers.";
-    public static String[] questions = new String[3];
-    public static String[] correctAnswers = new String[3];
+    public static String[] questions = new String[Engine.COUNT_ROUNDS];
+    public static String[] correctAnswers = new String[Engine.COUNT_ROUNDS];
     public static int gcdByEuclidsAlgorithm(int n1, int n2) {
         if (n2 == 0) {
             return n1;
@@ -16,7 +16,7 @@ public class GCD {
     }
     public static void generateQuestionsAndAnswers() {
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < Engine.COUNT_ROUNDS; i++) {
             int n1 = new Random().nextInt(50);
             int n2 = new Random().nextInt(50);
             questions[i] = String.format("%d %d%n", n1, n2);
@@ -25,6 +25,6 @@ public class GCD {
     }
     public static void startGame() {
         generateQuestionsAndAnswers();
-        Engine.flow(requirement, questions, correctAnswers);
+        Engine.runGame(requirement, questions, correctAnswers);
     }
 }

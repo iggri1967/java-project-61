@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        //Engine.listOfGames();
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -18,33 +17,31 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         System.out.println("Your choice: " + choice);
-
-        switch (choice) {
-            case 1:
-                Cli.runGame();
-                break;
-            case 2:
-                Cli.runGame();
-                Even.startGame();
-                break;
-            case 3:
-                Cli.runGame();
-                Calc.startGame();
-                break;
-            case 4:
-                Cli.runGame();
-                GCD.startGame();
-                break;
-            case 5:
-                Cli.runGame();
-                Progression.startGame();
-                break;
-            case 6:
-                Cli.runGame();
-                Prime.startGame();
-                break;
-            default:
-                break;
+        if (choice == 1) {
+            Cli.greeting();
+        } else if (choice != 0) {
+            System.out.println("Welcome to the Brain Games!\nMay I have your name? ");
+            String userName = scanner.next();
+            Engine.setUSER(userName);
+            switch (choice) {
+                case 2:
+                    Even.startGame();
+                    break;
+                case 3:
+                    Calc.startGame();
+                    break;
+                case 4:
+                    GCD.startGame();
+                    break;
+                case 5:
+                    Progression.startGame();
+                    break;
+                case 6:
+                    Prime.startGame();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

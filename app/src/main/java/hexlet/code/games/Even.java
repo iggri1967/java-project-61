@@ -6,18 +6,22 @@ import java.util.Random;
 
 public class Even {
     public static String requirement = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-    public static String[] questions = new String[3];
-    public static int[] questionsInt = new int[3];
-    public static String[] correctAnswers = new String[3];
+    public static String[] questions = new String[Engine.COUNT_ROUNDS];
+    public static int[] questionsInt = new int[Engine.COUNT_ROUNDS];
+    public static String[] correctAnswers = new String[Engine.COUNT_ROUNDS];
     public static void generateQuestionsAndAnswers() {
-        for (int i = 0; i < 3; i++) {
-            questionsInt[i] = new Random().nextInt(1000);
+        Random random = new Random();
+        for (int i = 0; i < Engine.COUNT_ROUNDS; i++) {
+            questionsInt[i] = random.nextInt(1000);
             questions[i] = Integer.toString(questionsInt[i]);
-            correctAnswers[i] = questionsInt[i] % 2 == 0 ? "yes" : "no";
+            correctAnswers[i] = isEven(questionsInt[i]) ? "yes" : "no";
         }
+    }
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
     public static void startGame() {
         generateQuestionsAndAnswers();
-        Engine.flow(requirement, questions, correctAnswers);
+        Engine.runGame(requirement, questions, correctAnswers);
     }
 }
